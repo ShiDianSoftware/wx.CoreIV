@@ -1,6 +1,6 @@
 <template name="CoreIV">
   <view class="CoreIVContentView" animation="{{CoreIVAnim}}" data-index="{{index}}" bindtap="CoreIVClickAction">
-    <image mode="aspectFit" src="/pages/FrameWorks/CoreIV/CoreIV.bundle/{{img}}.png"></image>
+    <image class="CoreIVImage {{CoreIVRotation ? 'CoreIVRotation' : ''}}" mode="aspectFit" src="/pages/FrameWorks/CoreIV/CoreIV.bundle/{{img}}.png" ></image>
     <label class="CoreIVMainLabel">{{title}}</label>
     <label class="CoreIVDescLabel">{{desc}}</label>
   </view>
