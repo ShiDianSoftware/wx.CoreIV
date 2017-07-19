@@ -22,7 +22,7 @@ CoreIV.showLoadingInVC = function (vc) {
     CoreIVAnim: anim_obj,
     index: 0,
     CoreIVRotation: true,
-    show:true
+    top:true
   }
   vc.setData({ CoreIVData })
 }
@@ -40,7 +40,7 @@ CoreIV.showNoDataInVC = function (vc) {
     CoreIVAnim: anim_obj,
     index: 1,
     CoreIVRotation: false,
-    show: true
+    top: true
   }
   vc.setData({ CoreIVData })
 }
@@ -58,7 +58,7 @@ CoreIV.showErrorInVC = function (vc, str = "") {
     CoreIVAnim: anim_obj,
     index: 2,
     CoreIVRotation: false,
-    show: true
+    top: true
   }
   vc.setData({ CoreIVData })
 }
@@ -73,8 +73,9 @@ CoreIV.dismissFromVC = function (vc) {
   var anim_obj = this.anim_creator.export()
   let CoreIVData = {
     CoreIVAnim: anim_obj,
-    CoreIVRotation: false,
-    show: true
+    CoreIVRotation: true,
+    top: false
+
   }
   vc.setData({ CoreIVData })
 }

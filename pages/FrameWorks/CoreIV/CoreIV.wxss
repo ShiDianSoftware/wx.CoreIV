@@ -1,9 +1,11 @@
 /* CoreIV.wxss */
-.CoreIVContentView {position: fixed;left: 0; right: 0; top: 0; bottom: 0; z-index: 1000; display: flex; flex-direction: column; opacity: 0;background: white;}
+.CoreIVContentView {position: fixed;left: 0; right: 0; top: 0; bottom: 0;  display: flex; flex-direction: column; opacity: 0;background: white;}
 .CoreIVImage {width: 115rpx; height: 115rpx; margin: 0 auto; margin-top: 50%;}
 .CoreIVMainLabel {text-align: center; font-size: 32rpx; color: #afafaf; margin-top: 55rpx;}
 .CoreIVDescLabel {text-align: center; font-size: 26rpx; color: #c9c9c9; margin-top: 30rpx;}
-.CoreIVRotation {width: 60rpx;height: 60rpx;animation:myfirst 1s ease-in-out infinite;}
+.CoreIVRotation {width: 50rpx;height: 50rpx;animation:myfirst 1s ease-in-out infinite;}
+.CoreIVBottom{z-index: 0; }
+.CoreIVTop{z-index: 1000;}
 @keyframes myfirst
 {
 0%   {transform:rotate(0deg)}

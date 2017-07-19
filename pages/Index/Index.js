@@ -24,7 +24,7 @@ Page({
 
     let weakSelf = this
     setTimeout(function () {
-      CoreIV.showErrorInVC(weakSelf)
+      CoreIV.dismissFromVC(weakSelf)
     }, 2000)
 
   },
