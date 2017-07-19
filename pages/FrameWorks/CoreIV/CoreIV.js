@@ -14,8 +14,9 @@ CoreIV.showLoadingInVC = function (vc) {
 
   this.anim_creator.opacity(1).step()
   var anim_obj = this.anim_creator.export()
+  let img = this.handleImg("indicator")
   let CoreIVData = {
-    img: "indicator",
+    img: img,
     title: "正在加载",
     desc: "请稍等片刻，马上就好",
     CoreIVAnim: anim_obj,
@@ -30,8 +31,9 @@ CoreIV.showNoDataInVC = function (vc) {
 
   this.anim_creator.opacity(1).step()
   var anim_obj = this.anim_creator.export()
+  let img = this.handleImg("wushuju")
   let CoreIVData = {
-    img: "wushuju",
+    img: img,
     title: "暂无数据",
     desc: "空空如也，什么都没有",
     CoreIVAnim: anim_obj,
@@ -42,12 +44,13 @@ CoreIV.showNoDataInVC = function (vc) {
 }
 
 //加载失败
-CoreIV.showErrorInVC = function (vc, str="") {
+CoreIV.showErrorInVC = function (vc, str = "") {
 
   this.anim_creator.opacity(1).step()
   var anim_obj = this.anim_creator.export()
+  let img = this.handleImg("jiazaishibai")
   let CoreIVData = {
-    img: "jiazaishibai",
+    img: img,
     title: "加载失败",
     desc: str == "" ? "出错咯，稍后再试试呢" : str,
     CoreIVAnim: anim_obj,
@@ -57,8 +60,12 @@ CoreIV.showErrorInVC = function (vc, str="") {
   vc.setData({ CoreIVData })
 }
 
+CoreIV.handleImg = function (name) {
+  return "/pages/FrameWorks/CoreIV/CoreIV.bundle/" + name + ".png"
+}
+
 //dismiss
-CoreIV.dismissFromVC = function(vc){
+CoreIV.dismissFromVC = function (vc) {
   this.anim_creator.opacity(0).step()
   var anim_obj = this.anim_creator.export()
   let CoreIVData = {
