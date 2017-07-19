@@ -1,2 +1,4 @@
 <import src="/pages/FrameWorks/CoreIV/CoreIV.wxml" />
 <template is="CoreIV" data="{{...CoreIVData}}"></template>
+
+<button bindtap="btnClick">按钮</button>

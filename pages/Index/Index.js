@@ -15,13 +15,21 @@ Page({
    */
   onLoad: function (options) {
 
+
+  },
+
+  btnClick: function(){
+
     CoreIV.showLoadingInVC(this)
 
     let weakSelf = this
-    setTimeout(function(){
+    setTimeout(function () {
       CoreIV.showErrorInVC(weakSelf)
-    },2000)
+    }, 2000)
+
   },
+
+
 
   //用户点击了空视图
   CoreIVClickAction: function(e){

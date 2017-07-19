@@ -1,5 +1,5 @@
 /* CoreIV.wxss */
-.CoreIVContentView {position: fixed;left: 0; right: 0; top: 0; bottom: 0; z-index: 1000; display: flex; flex-direction: column; opacity: 0;}
+.CoreIVContentView {position: fixed;left: 0; right: 0; top: 0; bottom: 0; z-index: 1000; display: flex; flex-direction: column; opacity: 0;background: white;}
 .CoreIVImage {width: 115rpx; height: 115rpx; margin: 0 auto; margin-top: 50%;}
 .CoreIVMainLabel {text-align: center; font-size: 32rpx; color: #afafaf; margin-top: 55rpx;}
 .CoreIVDescLabel {text-align: center; font-size: 26rpx; color: #c9c9c9; margin-top: 30rpx;}

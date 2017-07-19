@@ -21,7 +21,8 @@ CoreIV.showLoadingInVC = function (vc) {
     desc: "请稍等片刻，马上就好",
     CoreIVAnim: anim_obj,
     index: 0,
-    CoreIVRotation: true
+    CoreIVRotation: true,
+    show:true
   }
   vc.setData({ CoreIVData })
 }
@@ -38,7 +39,8 @@ CoreIV.showNoDataInVC = function (vc) {
     desc: "空空如也，什么都没有",
     CoreIVAnim: anim_obj,
     index: 1,
-    CoreIVRotation: false
+    CoreIVRotation: false,
+    show: true
   }
   vc.setData({ CoreIVData })
 }
@@ -55,7 +57,8 @@ CoreIV.showErrorInVC = function (vc, str = "") {
     desc: str == "" ? "出错咯，稍后再试试呢" : str,
     CoreIVAnim: anim_obj,
     index: 2,
-    CoreIVRotation: false
+    CoreIVRotation: false,
+    show: true
   }
   vc.setData({ CoreIVData })
 }
@@ -70,7 +73,8 @@ CoreIV.dismissFromVC = function (vc) {
   var anim_obj = this.anim_creator.export()
   let CoreIVData = {
     CoreIVAnim: anim_obj,
-    CoreIVRotation: false
+    CoreIVRotation: false,
+    show: true
   }
   vc.setData({ CoreIVData })
 }
